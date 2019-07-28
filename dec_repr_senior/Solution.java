@@ -1,13 +1,17 @@
-public class Solution() 
-{ 
-    // Function to print the maximum number 
-    static int printMaxNum(int num) 
-    { 
-        // hashed array to store count of digits 
-        int count[] = new int[10]; 
+// you can also use imports, for example:
+import java.util.*;
+
+// you can write to stdout for debugging purposes, e.g.
+// System.out.println("this is a debug message");
+
+class Solution {
+    public static int solution(int N) {
+
+	//converting Integer to an Array of digit
+	     int count[] = new int[10]; 
           
         // Converting given number to string 
-        String str = Integer.toString(num); 
+        String str = Integer.toString(N); 
           
         // Updating the count array 
         for(int i=0; i < str.length(); i++) 
@@ -36,6 +40,7 @@ public class Solution()
     public static void main(String[] args)  
     { 
         int num = 38293367; 
-        System.out.println(printMaxNum(num)); 
+        System.out.println(solution(num)); 
     } 
-} 
+}
+
